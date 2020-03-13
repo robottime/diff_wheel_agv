@@ -1,0 +1,820 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded: ~
+      Splitter Ratio: 0.43673470616340637
+    Tree Height: 728
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 255; 0; 0
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 0
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: LaserScan
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.05000000074505806
+      Style: Flat Squares
+      Topic: /scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 47
+      Min Color: 0; 0; 0
+      Min Intensity: 47
+      Name: LaserScanFiltered
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 10
+      Size (m): 0.10000000149011612
+      Style: Points
+      Topic: /scan_filtered
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Angle Tolerance: 0.10000000149011612
+      Class: rviz/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.30000001192092896
+          Color: 204; 51; 204
+          Scale: 1
+          Value: true
+        Value: false
+      Enabled: false
+      Keep: 50
+      Name: Odometry
+      Position Tolerance: 0.10000000149011612
+      Shape:
+        Alpha: 1
+        Axes Length: 1
+        Axes Radius: 0.10000000149011612
+        Color: 255; 25; 0
+        Head Length: 0.30000001192092896
+        Head Radius: 0.10000000149011612
+        Shaft Length: 1
+        Shaft Radius: 0.05000000074505806
+        Value: Arrow
+      Topic: /odom
+      Unreliable: false
+      Value: false
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        base_footprint:
+          Value: true
+        ks1a293_camera:
+          Value: false
+        lidar_link:
+          Value: false
+        map:
+          Value: true
+        odom:
+          Value: true
+        tag_0:
+          Value: true
+        tag_1:
+          Value: true
+        tag_10:
+          Value: false
+        tag_11:
+          Value: true
+        tag_12:
+          Value: false
+        tag_13:
+          Value: false
+        tag_14:
+          Value: false
+        tag_15:
+          Value: false
+        tag_16:
+          Value: false
+        tag_17:
+          Value: false
+        tag_18:
+          Value: false
+        tag_19:
+          Value: false
+        tag_2:
+          Value: false
+        tag_20:
+          Value: false
+        tag_21:
+          Value: true
+        tag_22:
+          Value: false
+        tag_23:
+          Value: false
+        tag_24:
+          Value: false
+        tag_25:
+          Value: false
+        tag_26:
+          Value: false
+        tag_27:
+          Value: false
+        tag_28:
+          Value: false
+        tag_29:
+          Value: false
+        tag_3:
+          Value: false
+        tag_30:
+          Value: false
+        tag_31:
+          Value: true
+        tag_32:
+          Value: false
+        tag_33:
+          Value: false
+        tag_34:
+          Value: false
+        tag_35:
+          Value: false
+        tag_36:
+          Value: false
+        tag_37:
+          Value: false
+        tag_38:
+          Value: false
+        tag_39:
+          Value: false
+        tag_4:
+          Value: false
+        tag_40:
+          Value: false
+        tag_41:
+          Value: true
+        tag_42:
+          Value: false
+        tag_43:
+          Value: false
+        tag_44:
+          Value: false
+        tag_45:
+          Value: false
+        tag_46:
+          Value: false
+        tag_47:
+          Value: false
+        tag_48:
+          Value: false
+        tag_49:
+          Value: false
+        tag_5:
+          Value: false
+        tag_50:
+          Value: false
+        tag_51:
+          Value: true
+        tag_52:
+          Value: false
+        tag_53:
+          Value: false
+        tag_54:
+          Value: false
+        tag_55:
+          Value: false
+        tag_56:
+          Value: false
+        tag_57:
+          Value: false
+        tag_58:
+          Value: false
+        tag_59:
+          Value: false
+        tag_6:
+          Value: false
+        tag_60:
+          Value: false
+        tag_61:
+          Value: true
+        tag_62:
+          Value: true
+        tag_63:
+          Value: true
+        tag_64:
+          Value: false
+        tag_65:
+          Value: false
+        tag_66:
+          Value: false
+        tag_67:
+          Value: false
+        tag_68:
+          Value: false
+        tag_69:
+          Value: false
+        tag_7:
+          Value: false
+        tag_70:
+          Value: false
+        tag_71:
+          Value: true
+        tag_72:
+          Value: false
+        tag_73:
+          Value: true
+        tag_74:
+          Value: false
+        tag_75:
+          Value: false
+        tag_76:
+          Value: false
+        tag_77:
+          Value: false
+        tag_78:
+          Value: false
+        tag_79:
+          Value: false
+        tag_8:
+          Value: false
+        tag_80:
+          Value: false
+        tag_81:
+          Value: true
+        tag_82:
+          Value: true
+        tag_83:
+          Value: true
+        tag_84:
+          Value: false
+        tag_85:
+          Value: false
+        tag_86:
+          Value: false
+        tag_87:
+          Value: false
+        tag_88:
+          Value: false
+        tag_89:
+          Value: false
+        tag_9:
+          Value: false
+        tag_90:
+          Value: false
+        tag_91:
+          Value: false
+        tag_92:
+          Value: false
+        tag_93:
+          Value: false
+        tag_94:
+          Value: false
+        tag_95:
+          Value: false
+        tag_96:
+          Value: false
+        tag_97:
+          Value: false
+        tag_98:
+          Value: false
+        tag_99:
+          Value: false
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          odom:
+            base_footprint:
+              ks1a293_camera:
+                {}
+              lidar_link:
+                {}
+          tag_0:
+            {}
+          tag_1:
+            {}
+          tag_10:
+            {}
+          tag_11:
+            {}
+          tag_12:
+            {}
+          tag_13:
+            {}
+          tag_14:
+            {}
+          tag_15:
+            {}
+          tag_16:
+            {}
+          tag_17:
+            {}
+          tag_18:
+            {}
+          tag_19:
+            {}
+          tag_2:
+            {}
+          tag_20:
+            {}
+          tag_21:
+            {}
+          tag_22:
+            {}
+          tag_23:
+            {}
+          tag_24:
+            {}
+          tag_25:
+            {}
+          tag_26:
+            {}
+          tag_27:
+            {}
+          tag_28:
+            {}
+          tag_29:
+            {}
+          tag_3:
+            {}
+          tag_30:
+            {}
+          tag_31:
+            {}
+          tag_32:
+            {}
+          tag_33:
+            {}
+          tag_34:
+            {}
+          tag_35:
+            {}
+          tag_36:
+            {}
+          tag_37:
+            {}
+          tag_38:
+            {}
+          tag_39:
+            {}
+          tag_4:
+            {}
+          tag_40:
+            {}
+          tag_41:
+            {}
+          tag_42:
+            {}
+          tag_43:
+            {}
+          tag_44:
+            {}
+          tag_45:
+            {}
+          tag_46:
+            {}
+          tag_47:
+            {}
+          tag_48:
+            {}
+          tag_49:
+            {}
+          tag_5:
+            {}
+          tag_50:
+            {}
+          tag_51:
+            {}
+          tag_52:
+            {}
+          tag_53:
+            {}
+          tag_54:
+            {}
+          tag_55:
+            {}
+          tag_56:
+            {}
+          tag_57:
+            {}
+          tag_58:
+            {}
+          tag_59:
+            {}
+          tag_6:
+            {}
+          tag_60:
+            {}
+          tag_61:
+            {}
+          tag_62:
+            {}
+          tag_63:
+            {}
+          tag_64:
+            {}
+          tag_65:
+            {}
+          tag_66:
+            {}
+          tag_67:
+            {}
+          tag_68:
+            {}
+          tag_69:
+            {}
+          tag_7:
+            {}
+          tag_70:
+            {}
+          tag_71:
+            {}
+          tag_72:
+            {}
+          tag_73:
+            {}
+          tag_74:
+            {}
+          tag_75:
+            {}
+          tag_76:
+            {}
+          tag_77:
+            {}
+          tag_78:
+            {}
+          tag_79:
+            {}
+          tag_8:
+            {}
+          tag_80:
+            {}
+          tag_81:
+            {}
+          tag_82:
+            {}
+          tag_83:
+            {}
+          tag_84:
+            {}
+          tag_85:
+            {}
+          tag_86:
+            {}
+          tag_87:
+            {}
+          tag_88:
+            {}
+          tag_89:
+            {}
+          tag_9:
+            {}
+          tag_90:
+            {}
+          tag_91:
+            {}
+          tag_92:
+            {}
+          tag_93:
+            {}
+          tag_94:
+            {}
+          tag_95:
+            {}
+          tag_96:
+            {}
+          tag_97:
+            {}
+          tag_98:
+            {}
+          tag_99:
+            {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: false
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: false
+      Visual Enabled: true
+    - Alpha: 0.699999988079071
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: false
+      Name: Map
+      Topic: /map
+      Unreliable: false
+      Use Timestamp: false
+      Value: false
+    - Class: rviz/Axes
+      Enabled: false
+      Length: 1
+      Name: Axes
+      Radius: 0.10000000149011612
+      Reference Frame: <Fixed Frame>
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.30000001192092896
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: AmclPoseArray
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /particlecloud
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.10000000149011612
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
+      Name: Goal
+      Shaft Length: 1
+      Shaft Radius: 0.05000000074505806
+      Shape: Arrow
+      Topic: /move_base_simple/goal
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 0; 0; 0
+      Enabled: false
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Plan
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /move_base/NavfnROS/plan
+      Unreliable: false
+      Value: false
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 0.699999988079071
+          Class: rviz/Map
+          Color Scheme: costmap
+          Draw Behind: true
+          Enabled: true
+          Name: Costmap
+          Topic: /move_base/global_costmap/costmap
+          Unreliable: false
+          Use Timestamp: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 239; 41; 41
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Lines
+          Line Width: 0.029999999329447746
+          Name: Planner
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /move_base/DWAPlannerROS/global_plan
+          Unreliable: false
+          Value: true
+      Enabled: false
+      Name: Global Map
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Class: rviz/Polygon
+          Color: 255; 255; 0
+          Enabled: true
+          Name: Polygon
+          Topic: /move_base/local_costmap/footprint
+          Unreliable: false
+          Value: true
+        - Alpha: 0.699999988079071
+          Class: rviz/Map
+          Color Scheme: costmap
+          Draw Behind: false
+          Enabled: true
+          Name: Costmap
+          Topic: /move_base/local_costmap/costmap
+          Unreliable: false
+          Use Timestamp: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 255; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Lines
+          Line Width: 0.029999999329447746
+          Name: Planner
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /move_base/DWAPlannerROS/local_plan
+          Unreliable: false
+          Value: true
+      Enabled: false
+      Name: Local Map
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /tag_detections_image
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Angle: 4.710000038146973
+      Class: rviz/TopDownOrtho
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Scale: 142.84300231933594
+      Target Frame: <Fixed Frame>
+      Value: TopDownOrtho (rviz)
+      X: 1.8505833148956299
+      Y: -0.8698636293411255
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1025
+  Hide Left Dock: false
+  Hide Right Dock: true
+  Image:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd00000004000000000000017200000363fc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d00000363000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d00610067006500000002d8000000c80000001600ffffff000000010000010f00000363fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d00000363000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073d0000003efc0100000002fb0000000800540069006d006501000000000000073d000002eb00fffffffb0000000800540069006d00650100000000000004500000000000000000000005c50000036300000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 1853
+  X: 67
+  Y: 27

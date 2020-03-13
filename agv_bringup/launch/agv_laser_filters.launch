@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_filter">
+    <rosparam command="load" file="$(find agv_bringup)/config/laser_config.yaml" />
+  </node>
+</launch>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="ns" default="/"/>
+  <arg name="frame_prefix" value="/"/>
+  <group ns="$(arg ns)">
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find agv_bringup)/rviz.rviz -f $(arg frame_prefix)odom"/>
+  </group>
+</launch>

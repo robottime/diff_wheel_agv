@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="ns" default="/"/><!--if you change "ns",please change "frame_prefix"-->
+  <arg name="frame_prefix" value=""/>
+  <arg name="rviz" default="false"/>
+  <arg name="camera_name" value="ks1a293_camera" />
+  <group ns="$(arg ns)">
+    <node name="agv_robot_node" pkg="agv_bringup" type="two_wheel.py" output="screen"/>
+    <node name="rplidar_node" pkg="rplidar_ros" type="rplidarNode" output="screen">
+      <param name="serial_port" value="/dev/rplidar"/>
+      <param name="frame_id" value="$(arg frame_prefix)lidar_link"/>
+    </node>
+    <include file="$(find agv_bringup)/launch/agv_laser_filters.launch"/><!--laser_config.yaml box_frame need add frame_prefix-->
+
+    <!--use static tf-->
+      <node pkg="tf" type="static_transform_publisher" name="lidar_base_tf" args="0.2 0 0 0 0 1 0 $(arg frame_prefix)base_footprint $(arg frame_prefix)lidar_link 100" />
+    <!--or use urdf+robot_state_publisher>
+      <param name="robot_description" command="$(find xacro)/xacro '$(find agv_description)/urdf/agv.urdf.xacro'"/>
+      <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher">
+        <param name="tf_prefix" value="$(arg ns)"/>
+      </node-->
+    <!--z:90, x:180-->
+    <node pkg="tf" type="static_transform_publisher" name="camera_base_tf" args="0 0 0 0.707 -0.707 0 0 base_footprint $(arg camera_name) 10" />
+    <node if="$(arg rviz)" name="rviz" pkg="rviz" type="rviz" args="-d $(find agv_bringup)/rviz.rviz -f $(arg frame_prefix)odom"/>
+  </group>
+</launch>
