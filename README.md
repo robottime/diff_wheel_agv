@@ -37,13 +37,16 @@ two wheel differential agv control、lidar slam、lidar navigation、QR code det
 3. ros-melodic-amcl   
 4. ros-melodic-navigation 
 
+![agv](二维码.jpg,"agv")   
+
 ## agv_camera
 agv底盘车底部中心位置装有一枚向下的usb摄像头用以拍摄地面上apriltag二维码，该程序包可以单独启动，在该项目中用在“agv_navigation_qr”中 
-### 图片
+
 ## agv_navigation_qr
-使用二维码定位，控制小车按固定路线行驶，路线定义在”agv_navigation_qr/scripts/autonav.py“Line 35,如下图所示 
-### 图片
-### 视频
+使用二维码定位，控制小车按固定路线行驶，路线定义在”agv_navigation_qr/scripts/autonav.py“Line 35,如下图所示   
+![waypoint](waypoint.png "waypoint")  
+
+![qr_navigation](20200312暴龙底盘二维码导航测试.gif,"qr_navigation")
 ***错误解决***   
 not find qr_locate,该程序包位于https://github.com/MapleHan/qr_locate  
 
