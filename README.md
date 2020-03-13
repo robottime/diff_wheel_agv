@@ -46,7 +46,8 @@ agv底盘车底部中心位置装有一枚向下的usb摄像头用以拍摄地�
 使用二维码定位，控制小车按固定路线行驶，路线定义在”agv_navigation_qr/scripts/autonav.py“Line 35,如下图所示   
 ![waypoint](waypoint.png "waypoint")  
 
-![qr_navigation](20200312暴龙底盘二维码导航测试.gif,"qr_navigation")
+![qr_navigation](20200312暴龙底盘二维码导航测试.gif,"qr_navigation")   
+
 ***错误解决***   
 not find qr_locate,该程序包位于https://github.com/MapleHan/qr_locate  
 
