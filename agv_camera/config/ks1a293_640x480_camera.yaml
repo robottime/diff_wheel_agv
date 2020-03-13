@@ -1,0 +1,20 @@
+image_width: 640
+image_height: 480
+camera_name: ks1a293_camera
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [598.3704109256407, 0, 394.4452106213359, 0, 596.1205083038845, 258.6785376589307, 0, 0, 1]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.3547530659525992, 0.2006614240135715, 0.0001291835393797146, -0.001156667390106225, 0]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [533.0291748046875, 0, 406.6919257977133, 0, 0, 560.7691040039062, 260.9979571142158, 0, 0, 0, 1, 0]
