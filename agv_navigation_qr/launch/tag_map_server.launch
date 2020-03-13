@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Set parameters -->
+  <rosparam command="load" file="$(find agv_navigation_qr)/config/map.yaml"/>
+  <node pkg="agv_navigation_qr" type="map_to_qr.py" name="map_to_qr_tf_broadcaster" respawn="false" clear_params="true" output="screen" >
+  </node>
+</launch>

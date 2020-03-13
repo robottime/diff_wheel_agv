@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+	<include file="$(find agv_bringup)/launch/agv_robot.launch">
+		<arg name="rviz" value="true"/>
+	</include>
+	<!--param name="port" value="/dev/ttyACM0"/-->
+  <!--node name="arm_get_put_node" pkg="arm_get_put" type="arm_get_put_service.py" output="screen"/-->
+	<!--node name="auto_nav" pkg="agv_navigation_qr" type="autonav.py" output="screen" respawn="true"/-->
+	<include file="$(find agv_camera)/launch/agv_camera.launch"/>
+	<include file="$(find agv_camera)/launch/continuous_detection.launch"/>
+	<include file="$(find agv_navigation_qr)/launch/tag_map_server.launch"/>
+	<node name="qr_locate" pkg="qr_locate" type="qr_locate_node" output="screen"/>
+	<node name="autonav" pkg="agv_navigation_qr" type="autonav.py" output="log"/>
+</launch>
