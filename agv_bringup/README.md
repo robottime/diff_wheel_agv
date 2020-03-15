@@ -5,6 +5,7 @@
 
 ### 启动底盘启动程序    
 ### 启动雷达、雷达数据滤波     
+### 摄像机安装在底盘底部正中心处，朝下安装，安装完毕后需使相机图像的方向与实际环境相对应，即图像上方对应车头方向，图像左边对应车身左边   
 ### 发布odom---base_footprint---lidar_link、base_footprint---camera_link TF    
 ### 订阅cmd_vel    
 ### 发布odom、scan      
