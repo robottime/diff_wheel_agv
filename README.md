@@ -7,6 +7,11 @@ two wheel differential agv control、lidar slam、lidar navigation、QR code det
   roslaunch agv_bringup agv_robot.launch  rviz:=true
   rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
+如果远端启动小车，默认rviz关闭
+```
+  roslaunch agv_bringup agv_robot.launch
+  rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
 ## agv_slam
 构建地图并保存     
 ```
@@ -37,7 +42,7 @@ two wheel differential agv control、lidar slam、lidar navigation、QR code det
 3. ros-melodic-amcl   
 4. ros-melodic-navigation 
 
-![agv](二维码.jpg,"agv")   
+![agv](二维码.jpg "agv")   
 
 ## agv_camera
 agv底盘车底部中心位置装有一枚向下的usb摄像头用以拍摄地面上apriltag二维码，该程序包可以单独启动，在该项目中用在“agv_navigation_qr”中 
@@ -46,7 +51,7 @@ agv底盘车底部中心位置装有一枚向下的usb摄像头用以拍摄地�
 使用二维码定位，控制小车按固定路线行驶，路线定义在”agv_navigation_qr/scripts/autonav.py“Line 35,如下图所示   
 ![waypoint](waypoint.png "waypoint")  
 
-![qr_navigation](20200312暴龙底盘二维码导航测试.gif,"qr_navigation")   
+![qr_navigation](20200312暴龙底盘二维码导航测试.gif "qr_navigation")   
 
 ***错误解决***   
 not find qr_locate,该程序包位于https://github.com/MapleHan/qr_locate  
