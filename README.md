@@ -38,9 +38,9 @@ two wheel differential agv control、lidar slam、lidar navigation、QR code det
 ***错误解决***   
 请确保电脑内装有以下几个Ros包：    
 1. ros-melodic-gmapping   
-2. ros-melodic-move-base    
-3. ros-melodic-amcl   
-4. ros-melodic-navigation 
+2. ros-melodic-move-base     
+3. ros-melodic-amcl    
+4. ros-melodic-navigation   
 
 ![agv](二维码.jpg "agv")   
 
@@ -54,6 +54,6 @@ agv底盘车底部中心位置装有一枚向下的usb摄像头用以拍摄地�
 ![qr_navigation](20200312暴龙底盘二维码导航测试.gif "qr_navigation")   
 
 ***错误解决***   
-not find qr_locate,该程序包位于https://github.com/MapleHan/qr_locate  
+not find qr_locate,该程序包位于https://github.com/robottime/qr_locate   
 
 
